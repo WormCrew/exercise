@@ -1,0 +1,108 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.calculator {
+  background-color: #333231;
+  margin: 20px auto;
+  width: 320px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 6px 9px 20px 1px rgba(0, 0, 0, 0.68), inset -1px -6px 12px 0.1px #141414;
+}
+
+.calculator-display {
+  background-color: #000000;
+  margin: 0;
+  padding: 5px 0 0 0;
+  border: 5px inset #beb3b3;
+}
+
+.led {
+  width: 10%;
+  display: inline-grid;
+}
+
+button:active {
+  box-shadow: inset 0px 0px 80px 0px rgba(0,0,0,0.25);
+}
+
+.calculator-keypad {
+  height: 400px;
+  padding-top: 25px;
+}
+
+.calculator .input-key {
+  width: 240px;
+}
+
+.calculator .digit-key {
+  background: #e0e0e7;
+}
+
+.calculator-key {
+  width: 70px;
+  height: 60px;
+  margin: 10px;
+  margin-inline-end: 0;
+  line-height: 53px;
+  font-size: x-large;
+  display: inline-grid;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+  border-radius: 12px;
+  -webkit-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0px -3px 3px 0px rgba(0, 0, 0, 0.75);
+}
+
+.calculator-key:active calculator-key:focus{
+  outline:none;
+}
+
+.calculator .function-key .calculator-key {
+  font-size: 2em;
+}
+.calculator .function-key .key-multiply {
+  line-height: 50px;
+}
+.calculator .digit-key .calculator-key {
+  font-size: 5.0em;
+}
+.calculator .digit-key .key-0 {
+  width: 160px;
+  text-align: left;
+  padding-left: 32px;
+}
+.calculator .digit-key .key-dot {
+  padding-top: 1em;
+  font-size: 0.75em;
+}
+
+.calculator .operator-key {
+  background: linear-gradient(to bottom, rgb(98, 98, 98), 0%, rgba(196,194,204,1) 100%);
+}
+.calculator .function-key {
+  background:  linear-gradient(to bottom, rgb(77, 63, 59) 0%, rgb(80, 71, 67) 100%);
+  color: #e0e0e7;
+}
+
+.calculator .equal-key, .calculator .key-all-clear{
+  background:  linear-gradient(to bottom, rgb(254, 138, 104) 0%, rgb(204, 92, 51) 100%);
+}
+
+.calculator .digit-key {
+  background:  linear-gradient(to bottom, rgb(232, 230, 227) 100%, rgb(219, 218, 215) 0%);
+  
+}

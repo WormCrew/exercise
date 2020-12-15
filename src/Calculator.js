@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import CalculatorKey from './CalculatorKey'
 import CalculatorDisplay from './CalculatorDisplay'
 
@@ -10,7 +10,7 @@ const CalculatorOperations = {
   '=': (prevValue, nextValue) => nextValue
 }
 
-class Calculator extends React.Component {
+class Calculator extends Component {
   state = {
     value: null,
     displayValue: '0',
